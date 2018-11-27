@@ -7,6 +7,7 @@ class Perro (models.Model):
     nombre = models.CharField(max_length=20)
     raza = models.CharField(max_length=20)
     detalle = models.CharField(max_length=300)
+    imagen = models.CharField(max_length=200)
     ESTADOS = (
         ('Rescatado', 'rescatado'),
         ('Disponible', 'disponible'),
