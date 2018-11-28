@@ -123,6 +123,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8887/'
+)
 CORS_ORIGIN_REGEX_WHITELIST = (
     'http://127.0.0.1:8887/'
 )

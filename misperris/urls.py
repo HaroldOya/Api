@@ -3,6 +3,7 @@ from django.urls import path
 from django.conf.urls import url, include
 from rest_framework import routers
 from perriblog import views
+from perriblog.models import Perro
 
 router = routers.DefaultRouter()
 router.register(r'perros', views.PerroViewSet)
